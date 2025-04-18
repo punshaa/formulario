@@ -22,6 +22,6 @@ Un formulario de contacto moderno, responsivo y accesible desarrollado con HTML5
 📦 Estructura del Proyecto
 
 formulario-java/
-├── index.html          # Estructura principal del formulario
-├── styles.css          # Estilos y animaciones
-├── script.js           # Lógica de validación y manejo de eventos
+-index.html          : Estructura principal del formulario
+-styles.css          : Estilos y animaciones
+-script.js           : Lógica de validación y manejo de eventos
