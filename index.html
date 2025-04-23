@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Camila</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Formulario de Camila</h1>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>¡Contáctame!</h2>
+                <p>Completa el siguiente formulario para ponernos en contacto</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="form-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required 
+                               placeholder="Ingresa tu nombre completo"
+                               aria-describedby="nombre-error">
+                        <span id="nombre-error" class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required 
+                               placeholder="ejemplo@correo.com"
+                               aria-describedby="email-error">
+                        <span id="email-error" class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto *</label>
+                        <select id="asunto" name="asunto" required
+                                aria-describedby="asunto-error">
+                            <option value="">Selecciona un asunto</option>
+                            <option value="consulta">Consulta General</option>
+                            <option value="trabajo">Propuesta de Trabajo</option>
+                            <option value="colaboracion">Colaboración</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <span id="asunto-error" class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" required
+                                  placeholder="Escribe tu mensaje aquí..."
+                                  maxlength="500"
+                                  aria-describedby="mensaje-error"></textarea>
+                        <span id="mensaje-error" class="error-message"></span>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <label for="privacidad">Acepto la política de privacidad *</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+                <div id="success-message" class="success-message" style="display: none;">
+                    ¡Gracias por tu mensaje! Te responderé pronto.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Formulario de Camila. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
